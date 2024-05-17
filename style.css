@@ -1,0 +1,9 @@
+@import './css/header.css';
+@import './css/media.css';
+@import './css/body.css';
+@import './css/footer.css';
+
+body{
+    background-color: #000000;
+}
+

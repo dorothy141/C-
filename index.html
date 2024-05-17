@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Стилі -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Підключення jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    <!-- Підключення шрифтів -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Хедер -->
+    <nav class="navbar navbar-expand-lg bg-dark data-bs-theme=dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Навчання</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Контакти</a>
+                    </li class="nav-item">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#requestModal">
+                            <img src="img/header/phone.png" alt="Фото" width="20" height="20"> Зв'язатися з нами
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="requestModalLabel">Зв'язатися з нами</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Форма -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Ваше ім'я</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Введіть ваше ім'я">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Електронна пошта</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="example@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneInput" class="form-label">Номер телефону</label>
+                            <input type="text" class="form-control" id="nameInput"
+                                placeholder="Введіть ваше номер телефону">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="confirmCheck">
+                            <label class="form-check-label" for="confirmCheck">Я даю згоду на обробку моїх персональних
+                                даних згідно
+                                політики конфіденційності</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Реєстрація</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Банер -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <img src="img/header/банер (1).svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Хто ми такі  -->
+    <div class="container">
+
+        <div class="row">
+
+            <h1>
+                Хто ми <span class="white">такі</span>
+            </h1>
+
+
+            <div class="col-xl-8 col-md-8 col-sm-12">
+                <div class="about">
+                    <br>
+                    "Ми - першовідкривачі фінансового океану, майстри торгівлі віртуальними хвилями та провідники у
+                    світі фінансових
+                    можливостей. Наші уроки - це не просто навчання, а подорож у захопливий світ трейдингу, де кожен
+                    крок приводить
+                    вас ближче до фінансового успіху. Ми - віддані пілоти вашого фінансового плавання, завжди готові
+                    відкрити для
+                    вас нові горизонти та допомогти здійснити ваші фінансові мрії. Ласкаво просимо до нашої школи
+                    трейдингу, де
+                    кожен стає майстром свого власного фінансового шляху."
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4 col-sm-12">
+                <div class="about2">
+                    <p>
+                    <p> <span class="num"> 4000+</span>
+                        вдячних студентів</p>
+
+
+                    <p> <span class="num">33</span>
+
+                        практикуючих трейдерів</p>
+
+                    <p><span class="num">4</span>
+                        мільйона в управлінні</p>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ПЛАН ПІДГОТОВКИ УСПІШНИХ ТРЕЙДЕРІВ -->
+        <h4>
+            <span class="white2">ПЛАН ПІДГОТОВКИ<br>УСПІШНИХ</span> ТРЕЙДЕРІВ
+        </h4>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/3block/img1.svg" alt="Зображення 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p class="border p-3">Власна онлайн платформа для навчання</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="img/3block/img2.svg" alt="Зображення 2" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p class="border p-3">Розвиток у великому ком'юніті однодумців </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/3block/img3.svg" alt="Зображення 3" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p class="border p-3">Найактуальніші інструменти торгівлі від практикуючих
+                        трейдерів</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="img/3block/img4.svg" alt="Зображення 4" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p class="border p-3">Авторська бібліотека інформації</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/3block/img5.svg" alt="Зображення 5" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <p class="border p-3"> Супровід студентів до отримання результатів</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="background-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text">
+                            <p>Навчання протягом 4 етапів<br> повного курсу</p>
+
+                        </div>
+                    </div>
+
+                    <img src="img/3block/img6 (2).svg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <!--  Напрямки: КРИПТО/FX/ІНДЕКСИ-->
+        <h2>
+            Напрямки: КРИПТО/FX/ІНДЕКСИ
+        </h2>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="img1">
+                        <img src="img/5block/Group 1.png" alt="" style="border-radius: 50px; width: 100%;">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="img1">
+                        <img src="img/5block/Group 2.png" alt="" style="border-radius: 50px;  width: 100%;">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="img2">
+                        <img src="img/5block/Group 3.png" alt="" style="border-radius: 50px;  width: 100%;">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="img2">
+                        <img src="img/5block/Group 4.png" alt="" style="border-radius: 50px;  width: 100%;">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Часті питання -->
+        <h2>
+            ЧАСТІ ПИТАННЯ
+        </h2>
+
+        <div class="faq_vn">
+            <div id="accordion-js">
+                <div class="item">
+                    <div class="heading">
+                        <div class="number">1</div>
+                        Що якщо я взагалі нічого не розумію в крипті, чи підійде для мене ваш курс?
+                    </div>
+                    <div class="content">Звісно, курс може підійти для вас, навіть якщо ви не маєте досвіду в
+                        криптографії. Багато курсів пропонують вступні матеріали та підтримку для новачків. Важливо
+                        вибрати курс, який відповідає вашому рівню та метам навчання.
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <div class="heading">
+                        <div class="number">2</div>
+                        Чи можу я заробляти після проходження всього навчання?
+                    </div>
+                    <div class="content">Так, після закінчення навчання ви матимете можливість заробляти в галузі
+                        криптографії. Багато компаній шукають кваліфікованих фахівців для різних проектів з безпеки та
+                        шифрування даних.</div>
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <div class="heading">
+                        <div class="number">3</div>
+                        У мене немає повної суми на навчання, але я дуже хочу піти, як бути?
+                    </div>
+                    <div class="content">
+                        Розгляньте можливості отримання фінансової допомоги, такі як стипендії, гранти або програми
+                        розстроченого платежу. Також можна розглянути роботу на часткову ставку під час навчання. Не
+                        соромтеся звертатися за консультацією до навчальних закладів або студентських консультантів.
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <div class="heading">
+                        <div class="number">4</div>
+                        Чи залишається в мене доступ до особистого кабінету після закінчення школи?
+                    </div>
+                    <div class="content">
+                        Зазвичай після закінчення курсу вам залишається доступ до особистого кабінету на певний час для
+                        перегляду матеріалів та отримання сертифікату.
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <div class="heading">
+                        <div class="number">5</div>
+                        Якщо я вже маю певні навички - чи можу я купити будь-який пакет окремо, щоб туди не входили
+                        модулі з попереднього пакета?
+                    </div>
+                    <div class="content">Так, ви зазвичай можете купити будь-який пакет окремо, якщо ви вже маєте певні
+                        навички і не потребуєте деяких модулів.</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <script>
+            jQuery(document).ready(function ($) {
+                jQuery('#accordion-js').find('.heading').click(function () {
+                    jQuery(this).toggleClass('accord_active').next().stop().slideToggle();
+                }).next().stop();
+            });
+        </script>
+
+
+
+
+
+
+
+
+        <!-- Футер -->
+
+        <h3> <span class="white1">Зацікавило?
+                Зв'яжіться </span> з нами
+        </h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <img src="img/footer/Group 5.png" alt="">
+                    <br><br><br>
+                    <span class="white1"> Після швидкої реєстрації ви отримаєте запрошення на онлайн-
+                        платфому та доступ до Telegram-бота, де на вас чекають:</span><br><br><br><br>
+
+
+
+                    <div class="text_footer">
+                        <ul class="custom-list">
+                            <li> Навчальні уроки</li><br>
+                            <li> Тести та перевірка домашніх завдань</li><br>
+                            <li> Методичні матеріали та гайди</li><br>
+                            <li> Онлайн-конференції з менторами</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="bottom_footer">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="block1">
+
+                            ProfiTrade — ЕКОСИСТЕМА для заробітку та розвитку людини у світі<br>
+                            крипти. Над проєктом працює команда професійних трейдерів.
+
+
+                            <br><br><br>
+                            © ProfiTrade, 2024 - Всі права захищені
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="block2">
+                            <span class="title">МЕНЮ</span>
+                            <p>ПРО НАС </p>
+                            <p> СТАТТІ</p>
+                            <p> ВІДГУКИ</p>
+                            <p>КОНТАКТИ</p>
+                            <p>ПУБЛІЧНА ОФЕРТА</p>
+                            <p> ПОЛІТИКА КОНФЕДЕНЦІЙНОСТІ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="block2">
+                            <span class="title">ПРОДУКТИ</span>
+                            <p>ONLINE SCHOOL </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="block2">
+                            <span class="title">НАШІ КОНТАКТИ</span>
+                            <p>+380443344455</p>
+                            <p>support@profitrade.company</p>
+
+                            <img src="img/footer/Link.png" alt=""> ...
+                            <img src="img/footer/Link (1).png" alt="">....
+                            <img src="img/footer/Link (2).png" alt="">
+
+
+
+<br><br>
+                            <span class="title">МОВА</span>
+                            <p>UA   ENG</p>
+                         
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Cкрипти -->
+        <script>script.js</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script scr="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
